@@ -47,7 +47,7 @@
             <ticketid>4</ticketid>
             <userid>3</userid>
             <date>January 8, 2020</date>
-            <status>tralala</status>
+            <status>kuku</status>
             <subject>Personal</subject>
             <messages>
                 <message from="Client">Can I get a beer?</message>
@@ -59,14 +59,14 @@
             <ticketid>5</ticketid>
             <userid>2</userid>
             <date>March 19, 2020</date>
-            <status>Ongoing</status>
+            <status>resolved</status>
             <subject>newticket.php</subject>
             <messages>
                 <message from="Client">added using newticket.php</message>
                 <message from="Admin">msg1</message>
                 <message from="Admin">kuku</message>
                 <message from="Admin">kukareku</message>
-            </messages>
+            <message from="Admin">resolved</message><message from="Client">I object, your Honor!</message></messages>
         </ticket>
     </tickets>
 

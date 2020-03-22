@@ -15,7 +15,6 @@ include_once '../layout/top_side-adm.php';
         <th>Privilege</th>
         <th>Name</th>
         <th>Username</th>
-        <th>Password</th>
     </tr>
     </thead>
     <tbody>
@@ -26,7 +25,6 @@ include_once '../layout/top_side-adm.php';
 			<td>$user->privilege</td>
 			<td>$user->name</td>
 			<td>$user->username</td>
-			<td>$user->password</td>
 		</tr>";
     }
     ?>
