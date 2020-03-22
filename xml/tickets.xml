@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<support>
+    <tickets>
+        <ticket ticketid="1" userid="2">
+            <ticketid>1</ticketid>
+            <userid>2</userid>
+            <date>January 8, 2020</date>
+            <status>2222</status>
+            <subject>Health</subject>
+            <messages>
+                <message from="Client">Need support ASAP!</message>
+                <message from="Admin">What's the issue?</message>
+                <message from="Client">Where do I get masks and toilet paper?!</message>
+                <message from="Admin">Hold on tight!</message>
+                <message from="Client">last message</message>
+                <message from="Client">very last mesg</message>
+
+            </messages>
+
+        </ticket>
+
+        <ticket userid="2" ticketid="2">
+            <ticketid>2</ticketid>
+            <userid>2</userid>
+            <date>January 8, 2020</date>
+            <status>tralala</status>
+            <subject>Political</subject>
+            <messages>
+                <message from="Client">HELP!</message>
+                <message from="Admin">We are mentally with you</message>
+
+            </messages>
+
+        </ticket>
+        <ticket userid="3" ticketid="3">
+            <ticketid>3</ticketid>
+            <userid>3</userid>
+            <date>January 8, 2020</date>
+            <status>tralala</status>
+            <subject>Social</subject>
+            <messages>
+                <message from="Client">I'd like to speak to someone please</message>
+                <message from="Admin">The cure is to hope</message>
+            </messages>
+        </ticket>
+        <ticket userid="3" ticketid="4">
+            <ticketid>4</ticketid>
+            <userid>3</userid>
+            <date>January 8, 2020</date>
+            <status>tralala</status>
+            <subject>Personal</subject>
+            <messages>
+                <message from="Client">Can I get a beer?</message>
+                <message from="Admin">It's coming!</message>
+                <message from="Admin">Yeah!</message>
+            </messages>
+        </ticket>
+        <ticket userid="2" ticketid="5">
+            <ticketid>5</ticketid>
+            <userid>2</userid>
+            <date>March 19, 2020</date>
+            <status>Ongoing</status>
+            <subject>newticket.php</subject>
+            <messages>
+                <message from="Client">added using newticket.php</message>
+                <message from="Admin">msg1</message>
+                <message from="Admin">kuku</message>
+                <message from="Admin">kukareku</message>
+            </messages>
+        </ticket>
+    </tickets>
+
+    <users>
+        <user userid="1">
+            <userid>1</userid>
+            <privilege>admin</privilege>
+            <name>John</name>
+            <username>admin</username>
+            <password>1</password>
+        </user>
+
+        <user userid="2">
+            <userid>2</userid>
+            <privilege>client</privilege>
+            <name>Mary</name>
+            <username>user2</username>
+            <password>2</password>
+        </user>
+
+        <user userid="3">
+            <userid>3</userid>
+            <privilege>client</privilege>
+            <name>George</name>
+            <username>user3</username>
+            <password>3</password>
+        </user>
+    </users>
+</support>

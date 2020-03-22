@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="fd7d701b-a95c-44e3-9f3d-869fa9783729" name="localhost" url="http://localhost/humber_xml/Assgnm-Labs/Assign2-ticket/tickets-xml-Taras Mrch21/xml_ticket">
+        <fileTransfer port="0" mountedRoot="" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

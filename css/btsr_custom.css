@@ -1,0 +1,152 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+/* My CSS: ========================*/
+ *   {
+  font-size: 1em;
+}
+a {
+}
+#btn_back {
+  color: mediumblue;
+}
+#btn_back:hover {
+  text-decoration: underline;
+}
+h1 {
+  text-align: center;
+  font-size: 1.8em;
+  margin: 20px 0;
+}
+h2 {
+  text-align: center;
+  margin: 10px 0;
+}
+h3 {
+  margin: 10px 0;
+}
+a {
+  color: black ;
+}
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  border: 1px solid grey;
+}
+ th, td {
+   padding: 6px;
+   border: 1px solid grey;
+ }
+ .noborder {
+   border:none;
+ }
+.table-cel-cntr th, .table-cel-cntr td
+{
+  text-align: center;
+  vertical-align: middle;
+}
+ .inlblock {
+   display:inline-block;
+ }
+.div-border {
+  border: 1px solid lightgrey;
+  padding: 10px;
+}
+#login-form {
+  max-width: 50%;
+  margin: 15px auto;
+}
+.row {
+  /*width:100%;*/
+}
+#messaggesDiv{
+  display: inline-block;
+  width: 35%;
+  margin: 15px 15px 15px 30px;
+  float: left;
+}
+#addMesgDiv {
+  display: inline-block;
+  width: 40%;
+  margin-left: 10px;
+  float: left;
+  /*border: 1px red solid;*/
+}
+#newticket-form {
+  margin: 28px auto;
+  max-width: 60%;
+}
+.flex-btn-side {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 0;
+  height: 100px;
+
+}
+.flex-btn-side div {
+}
+
+
+.sucss_div {
+  margin-top: 5% ;
+  text-align: center;
+  /*display:inline-block;*/
+  /*border: 3px solid black;*/
+}
+#msg-tabls-div {
+  display: flex;
+  flex-flow: row nowrap;
+  min-width: 45%;
+}
+
+/*Bootstrap CSS: =========================*/
+body {
+  overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1rem;
+  color: mediumblue;
+  border: 1px solid mediumblue;
+}
+
+#sidebar-wrapper .list-group {
+  width: 10rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
