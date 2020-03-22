@@ -1,50 +1,50 @@
 <?php
 session_start();
 if(isset($_SESSION['user-id'])) {
+//    echo $_SESSION['user-id'] ;exit();
 
     include_once '../layout/top_side-us.php';
 
     $xml=simplexml_load_file("../xml/tickets.xml");
-    //print_r($xml);
-    //print_r($xml->tickets);
+    $error = "";
     $numbTickInXml = count($xml->tickets->ticket);
     //echo $numbTickInXml .'AAA';
 
-    if(isset($_GET['addTicket'])){
+    if(isset($_GET['addTicket'])) {
     $ticketID = $numbTickInXml+1;
     $userID = $_SESSION['user-id'];
     $subject = $_GET['subject'];
     $messageText = $_GET['message'];
 
+        //Function to Add Ticket to XML
+        function addTicket() {
+            global $xml, $userID, $subject, $messageText, $ticketID ;
+            $ticket = $xml->tickets->addChild('ticket');
+            $ticket->addAttribute('userid', $userID);
+            $ticket->addAttribute('ticketid', $ticketID);
+            $ticket->addChild('ticketid', $ticketID);
+            $ticket->addChild('userid', $userID);
+            $ticket->addChild('date', date("F j, Y"));
+            $ticket->addChild('status', 'Ongoing');
+            $ticket->addChild('subject', $subject);
+            $ticket->addChild('messages');
+            $messageNode = $ticket->messages->addChild('message', $messageText);
+            $messageNode->addAttribute('from', 'Client');
+            $xml->saveXML("../xml/tickets.xml");
+        }
+
     if($subject && $messageText){
     addTicket();
     header('Location:  sucs-adticket.php');
     } else {
-    echo "Fill all the fields";
-    }
-
-    //Function to Add Ticket to XML
-    function addTicket() {
-    global $xml, $userID, $subject, $messageText, $ticketID ;
-    $ticket = $xml->tickets->addChild('ticket');
-    $ticket->addAttribute('userid', $userID);
-    $ticket->addAttribute('ticketid', $ticketID);
-    $ticket->addChild('ticketid', $ticketID);
-    $ticket->addChild('userid', $userID);
-    $ticket->addChild('date', date("F j, Y"));
-    $ticket->addChild('status', 'Ongoing');
-    $ticket->addChild('subject', $subject);
-    $ticket->addChild('messages');
-    $messageNode = $ticket->messages->addChild('message', $messageText);
-    $messageNode->addAttribute('from', 'Client');
-    $xml->saveXML("../xml/tickets.xml");
+    $error =  "Fill all the fields";
     }
     }
     ?>
     <!--    Form to Create a new ticket -->
     <div>
         <h1>Create a new Ticket</h1>
-        <form action="" method="get" id="newticket-form">
+        <form action="newticket.php" method="get" id="newticket-form">
 
             <div class="form-group">
                 <label for="subject">Subject:</label>
@@ -63,6 +63,7 @@ if(isset($_SESSION['user-id'])) {
                 Submit ticket
             </button>
         </form>
+        <p><?= $error ?></p>
     </div>
 
 <?php include_once '../layout/bottom.php'; ?>
@@ -71,4 +72,3 @@ if(isset($_SESSION['user-id'])) {
 }else{
 header("Location: login.php");
 }?>
-

@@ -36,7 +36,7 @@
             <ticketid>3</ticketid>
             <userid>3</userid>
             <date>January 8, 2020</date>
-            <status>tralala</status>
+            <status>ulalu</status>
             <subject>Social</subject>
             <messages>
                 <message from="Client">I'd like to speak to someone please</message>
@@ -68,7 +68,7 @@
                 <message from="Admin">kukareku</message>
             <message from="Admin">resolved</message><message from="Client">I object, your Honor!</message></messages>
         </ticket>
-    </tickets>
+    <ticket userid="2" ticketid="6"><ticketid>6</ticketid><userid>2</userid><date>March 22, 2020</date><status>Ongoing</status><subject>new tick3</subject><messages><message from="Client">new tick3</message></messages></ticket></tickets>
 
     <users>
         <user userid="1">
